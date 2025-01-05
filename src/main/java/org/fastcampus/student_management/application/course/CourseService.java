@@ -29,12 +29,7 @@ public class CourseService {
     // TODO: 과제 구현 부분
     List<Course> courseList = courseRepository.getCourseDayOfWeek(dayOfWeek);
 
-    return courseList.stream()
-            .map(course -> new CourseInfoDto(course.getCourseName()
-                    , course.getFee()
-                    , course.getDayOfWeek().toString()
-                    , course.getStudentName()
-                    , course.getCourseTime())).collect(Collectors.toList());
+    return courseList.stream().map(CourseInfoDto::new).toList();
   }
 
   //특정 학생의 수강료를 변경 시키면 특정 학생 수업에 전체에 적용이 되어야 함
