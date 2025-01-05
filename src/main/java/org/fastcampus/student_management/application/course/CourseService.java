@@ -35,7 +35,7 @@ public class CourseService {
     List<Course> courseList = courseRepository.getCourseListByStudent(studentName);
 
     for(Course course : courseList) {
-      course.setFee(fee);
+      course.changeFee(fee);
     }
   }
 }

@@ -5,7 +5,7 @@ import org.fastcampus.student_management.domain.DayOfWeek;
 
 public class CourseInfoDto {
   private final String courseName;
-  private int fee;
+  private final int fee;
   private final DayOfWeek dayOfWeek;
   private final String studentName;
   private final Long courseTime;

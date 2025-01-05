@@ -26,8 +26,20 @@ public class Student {
     return age;
   }
 
-  public void setActivated(boolean activated) {
-    this.activated = activated;
+  public void activate() {
+    if(this.activated) {
+      throw new IllegalArgumentException();
+    }
+
+    this.activated = true;
+  }
+
+  public void deactivate(){
+    if(!this.activated) {
+      throw new IllegalArgumentException();
+    }
+
+    this.activated = false;
   }
 
   public String getAddress() {
