@@ -3,7 +3,7 @@ package org.fastcampus.student_management.domain;
 public class Course {
   private final Student student;
   private final String courseName;
-  private final CourseFee fee;
+  private CourseFee fee;
   private final DayOfWeek dayOfWeek;
   private final Long courseTime;
 
