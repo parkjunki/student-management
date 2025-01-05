@@ -24,13 +24,13 @@ public class StudentService {
 
   //활동 상태에서 활동 상태로, 비활성 상태에서 비활성 상태로 변경이 되어서는 안 됨
   public void activateStudent(String name) {
-    // TODO: 과제 구현 부분
+
     Student student = getStudent(name);
     student.activate();
   }
 
   public void deactivateStudent(String name) {
-    // TODO: 과제 구현 부분
+
     Student student = getStudent(name);
     student.deactivate();
   }
