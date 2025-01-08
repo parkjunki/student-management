@@ -1,4 +1,4 @@
-package org.fastcampus.student_management.application.course.dto;
+package org.fastcampus.student_management.domain.dto;
 
 import org.fastcampus.student_management.domain.Course;
 import org.fastcampus.student_management.domain.DayOfWeek;
